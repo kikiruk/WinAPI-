@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Managers">
+      <UniqueIdentifier>{a7809537-9dd3-49c7-bd4c-583089dd3fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\OverallVariables">
+      <UniqueIdentifier>{8261f42e-8fee-4769-b868-566b80a8e9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\MouseManager">
+      <UniqueIdentifier>{4289ebd2-779e-4eb1-bef8-10690fcc2a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MainGame">
+      <UniqueIdentifier>{ee773a1f-8a3d-481e-bb8c-b42133b7938c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States">
+      <UniqueIdentifier>{1bbb6cd8-828b-4ce6-840c-9c2064016ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States\Main">
+      <UniqueIdentifier>{4dd7215f-849f-49e2-8020-6350ba5a68df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States\GameStart">
+      <UniqueIdentifier>{54475a34-400c-4fe6-b74b-01e0d6a561b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States\Option">
+      <UniqueIdentifier>{fdffb06b-6870-4369-a2bd-72ee9c1549f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\StateManager">
+      <UniqueIdentifier>{ec32752c-2e0d-4a94-859f-15581ee19f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Objects">
+      <UniqueIdentifier>{aec447b6-3f14-4bb2-a3b4-5dadb8b3ef97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Objects\ChessHorsess">
+      <UniqueIdentifier>{0426406c-415b-4d8c-8783-b6aa6e79421d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Objects\ChessHorsess\King%28왕%29">
+      <UniqueIdentifier>{e0e8bca1-3d2a-4ed6-9978-23c6e36a9547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Objects\ChessHorsess\Queen%28여왕%29">
+      <UniqueIdentifier>{5009c1e4-8252-4292-802d-77f03b5bae44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Objects\ChessHorsess\Bishop%28대각%29">
+      <UniqueIdentifier>{be421aa2-7d8b-4265-9592-0afcd230a663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Objects\ChessHorsess\Night%28말%29">
+      <UniqueIdentifier>{446554f3-43f5-48d0-839b-f4eb52f166f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Objects\ChessHorsess\Look%28직선%29">
+      <UniqueIdentifier>{f2aee6f5-087e-4d4a-9461-ba4c3acbfcf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Objects\ChessHorsess\Pawn%28일반병%29">
+      <UniqueIdentifier>{0244df67-df62-4646-812d-098220bfaf4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\MoveManager">
+      <UniqueIdentifier>{1c4ed046-fb29-40a5-9b9c-0f8263a8dfcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\BitMapManager">
+      <UniqueIdentifier>{651bd2ef-b41e-4bcd-af73-6f6c0ce24040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Computer">
+      <UniqueIdentifier>{d049be8f-009d-4248-b7a6-57371c938324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States\BeforGameStart">
+      <UniqueIdentifier>{f762133e-06f7-4db5-b3f2-81e50733b353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States\Game_Clear">
+      <UniqueIdentifier>{fff1fad4-d66e-4d9f-8ed5-a6a4c867c6f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States\RankRegistration">
+      <UniqueIdentifier>{f30713f4-fc75-41e0-8e2f-28eeb9c52f47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OverallVariables.cpp">
+      <Filter>소스 파일\Managers\OverallVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseManager.cpp">
+      <Filter>소스 파일\Managers\MouseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>소스 파일\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <Filter>소스 파일\States\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>소스 파일\States\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStart.cpp">
+      <Filter>소스 파일\States\GameStart</Filter>
+    </ClCompile>
+    <ClCompile Include="StatrManager.cpp">
+      <Filter>소스 파일\Managers\StateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ChessHorse.cpp">
+      <Filter>소스 파일\Objects\ChessHorsess</Filter>
+    </ClCompile>
+    <ClCompile Include="King.cpp">
+      <Filter>소스 파일\Objects\ChessHorsess\King%28왕%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Bishop.cpp">
+      <Filter>소스 파일\Objects\ChessHorsess\Bishop%28대각%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Look.cpp">
+      <Filter>소스 파일\Objects\ChessHorsess\Look%28직선%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Night.cpp">
+      <Filter>소스 파일\Objects\ChessHorsess\Night%28말%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Pawn.cpp">
+      <Filter>소스 파일\Objects\ChessHorsess\Pawn%28일반병%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Queen.cpp">
+      <Filter>소스 파일\Objects\ChessHorsess\Queen%28여왕%29</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveManager.cpp">
+      <Filter>소스 파일\Managers\MoveManager</Filter>
+    </ClCompile>
+    <ClCompile Include="BitMapManager.cpp">
+      <Filter>소스 파일\Managers\BitMapManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Computer.cpp">
+      <Filter>소스 파일\Computer</Filter>
+    </ClCompile>
+    <ClCompile Include="BeforGameStart.cpp">
+      <Filter>소스 파일\States\BeforGameStart</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Clear.cpp">
+      <Filter>소스 파일\States\Game_Clear</Filter>
+    </ClCompile>
+    <ClCompile Include="RankRegistration.cpp">
+      <Filter>소스 파일\States\RankRegistration</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OverallVariables.h">
+      <Filter>소스 파일\Managers\OverallVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseManager.h">
+      <Filter>소스 파일\Managers\MouseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>소스 파일\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>소스 파일\States</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>소스 파일\Managers\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <Filter>소스 파일\States\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>소스 파일\States\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStart.h">
+      <Filter>소스 파일\States\GameStart</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ChessHorse.h">
+      <Filter>소스 파일\Objects\ChessHorsess</Filter>
+    </ClInclude>
+    <ClInclude Include="King.h">
+      <Filter>소스 파일\Objects\ChessHorsess\King%28왕%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Bishop.h">
+      <Filter>소스 파일\Objects\ChessHorsess\Bishop%28대각%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Look.h">
+      <Filter>소스 파일\Objects\ChessHorsess\Look%28직선%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Night.h">
+      <Filter>소스 파일\Objects\ChessHorsess\Night%28말%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Pawn.h">
+      <Filter>소스 파일\Objects\ChessHorsess\Pawn%28일반병%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Queen.h">
+      <Filter>소스 파일\Objects\ChessHorsess\Queen%28여왕%29</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveManager.h">
+      <Filter>소스 파일\Managers\MoveManager</Filter>
+    </ClInclude>
+    <ClInclude Include="BitMapManager.h">
+      <Filter>소스 파일\Managers\BitMapManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Computer.h">
+      <Filter>소스 파일\Computer</Filter>
+    </ClInclude>
+    <ClInclude Include="BeforGameStart.h">
+      <Filter>소스 파일\States\BeforGameStart</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Clear.h">
+      <Filter>소스 파일\States\Game_Clear</Filter>
+    </ClInclude>
+    <ClInclude Include="RankRegistration.h">
+      <Filter>소스 파일\States\RankRegistration</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="chess1.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\images\체스말.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\체스판.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\체스표시싸인.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\쿨타임.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\죽인말.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\gameStart.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\clear.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\you.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\loose.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\Buttons.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\backGround.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\checkMate_black.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\checkMate_white.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\StartLogo.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\MainButtons.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\difficultly.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\새 프로젝트 (1).bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
