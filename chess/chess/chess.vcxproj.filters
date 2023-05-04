@@ -271,6 +271,60 @@
     <Image Include="bitmap1.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
+    <Image Include="..\images\logo\117_StartLogo - 복사본.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\103_backGround.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\104_Buttons.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\105_difficultly.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\106_MainButtons.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\107_죽인말.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\108_체스말.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\109_체스판.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\110_체스표시싸인.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\111_쿨타임.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\112_checkMate_black.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\113_checkMate_white.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\114_clear.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\115_gameStart.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\116_loose.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\117_StartLogo.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\118_you.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\119_설정배경화면.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="chess.rc">

@@ -34,6 +34,7 @@ private:
 	static HDC StartLogo_bitmapDC;//시작할때 로고
 	static HDC MainButtons_bitmapDC;//시작할때 옵션버튼, 시작버튼
 	static HDC Difficultly_bitmapDC;//어려움설정할때
+	static HDC Option_background_bitmapDC; // 옵션 배경화면 
 
 public:
 	static void initialize();
@@ -55,5 +56,6 @@ public:
 	static HDC getStartLogo_bitmapDC();
 	static HDC getMainButtons_bitmapDC();
 	static HDC getDifficultly_bitmapDC();
+	static HDC getOption_background_bitmapDC();
 };
 

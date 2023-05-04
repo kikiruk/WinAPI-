@@ -164,9 +164,27 @@
     <ClInclude Include="StateManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\images\103_backGround.bmp" />
+    <Image Include="..\images\104_Buttons.bmp" />
+    <Image Include="..\images\105_difficultly.bmp" />
+    <Image Include="..\images\106_MainButtons.bmp" />
+    <Image Include="..\images\107_죽인말.bmp" />
+    <Image Include="..\images\108_체스말.bmp" />
+    <Image Include="..\images\109_체스판.bmp" />
+    <Image Include="..\images\110_체스표시싸인.bmp" />
+    <Image Include="..\images\111_쿨타임.bmp" />
     <Image Include="..\images\backGround.bmp" />
     <Image Include="..\images\Buttons.bmp" />
     <Image Include="..\images\difficultly.bmp" />
+    <Image Include="..\images\logo\112_checkMate_black.bmp" />
+    <Image Include="..\images\logo\113_checkMate_white.bmp" />
+    <Image Include="..\images\logo\114_clear.bmp" />
+    <Image Include="..\images\logo\115_gameStart.bmp" />
+    <Image Include="..\images\logo\116_loose.bmp" />
+    <Image Include="..\images\logo\117_StartLogo - 복사본.bmp" />
+    <Image Include="..\images\logo\117_StartLogo.bmp" />
+    <Image Include="..\images\logo\118_you.bmp" />
+    <Image Include="..\images\logo\119_설정배경화면.bmp" />
     <Image Include="..\images\logo\checkMate_black.bmp" />
     <Image Include="..\images\logo\checkMate_white.bmp" />
     <Image Include="..\images\logo\clear.bmp" />

@@ -7,9 +7,12 @@ class Option : public State
 private:
 	HDC	Buttons_bitmapDC;
 	HDC	difficultly_Buttons_bitmapDC;
+	HDC	option_background_bitmapDC;
+	HDC	BackGround_bitmapDC;
 	RECT GotoMainButton;
 	RECT difficulty;
 	Computer* computer;
+	int count = 0;
 
 public:
 	virtual void progress();

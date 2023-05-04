@@ -1,4 +1,3 @@
-#include <assert.h>
 #include "BitMapManager.h"
 #include "OverallVariables.h"
 
@@ -18,6 +17,7 @@ HDC	BitMapManager::CheckMate_black_bitmapDC = nullptr;
 HDC	BitMapManager::StartLogo_bitmapDC = nullptr;
 HDC	BitMapManager::MainButtons_bitmapDC = nullptr;
 HDC	BitMapManager::Difficultly_bitmapDC = nullptr;
+HDC	BitMapManager::Option_background_bitmapDC = nullptr;
 
 void BitMapManager::initialize()
 {
@@ -32,10 +32,10 @@ void BitMapManager::initialize()
 	HBITMAP Buttons_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(104));
 	HBITMAP Buttons_oldBitMap = (HBITMAP)SelectObject(Buttons_bitmapDC, Buttons_myBitMap);
 
-	//105 난이도설정
-	StartLogo_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
-	HBITMAP StartLogo_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(117));
-	HBITMAP StartLogo_oldBitMap = (HBITMAP)SelectObject(StartLogo_bitmapDC, StartLogo_myBitMap);
+	//Difficultly_bitmapDC
+	Difficultly_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
+	HBITMAP Difficultly_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(105));
+	HBITMAP Difficultly_oldBitMap = (HBITMAP)SelectObject(Difficultly_bitmapDC, Difficultly_myBitMap);
 
 	//106 메인버튼
 	MainButtons_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
@@ -50,7 +50,6 @@ void BitMapManager::initialize()
 	//체스말
 	ChessHorse_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
 	HBITMAP ChessHorse_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(108));
-	assert(ChessHorse_myBitMap != NULL);
 	(HBITMAP)SelectObject(ChessHorse_bitmapDC, ChessHorse_myBitMap);
 
 	//체스판
@@ -94,15 +93,20 @@ void BitMapManager::initialize()
 	HBITMAP Logo_loose_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(116));
 	HBITMAP Logo_loose_oldBitMap = (HBITMAP)SelectObject(Logo_loose_bitmapDC, Logo_loose_myBitMap);
 
-	//Difficultly_bitmapDC
-	Difficultly_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
-	HBITMAP Difficultly_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(105));
-	HBITMAP Difficultly_oldBitMap = (HBITMAP)SelectObject(Difficultly_bitmapDC, Difficultly_myBitMap);
+	//105 난이도설정
+	StartLogo_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
+	HBITMAP StartLogo_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(117));
+	HBITMAP StartLogo_oldBitMap = (HBITMAP)SelectObject(StartLogo_bitmapDC, StartLogo_myBitMap);
 
 	//you logo
 	Logo_you_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
 	HBITMAP Logo_you_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(118));
 	HBITMAP Logo_you_oldBitMap = (HBITMAP)SelectObject(Logo_you_bitmapDC, Logo_you_myBitMap);
+
+	//you logo
+	Option_background_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
+	HBITMAP Option_background_bitmapDC_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(122));
+	HBITMAP Option_background_bitmapDC_oldBitMap = (HBITMAP)SelectObject(Option_background_bitmapDC, Option_background_bitmapDC_myBitMap);
 }
 
 HDC BitMapManager::getChessHorse_bitmapDC()
@@ -183,5 +187,10 @@ HDC BitMapManager::getMainButtons_bitmapDC()
 HDC BitMapManager::getDifficultly_bitmapDC()
 {
 	return Difficultly_bitmapDC;
+}
+
+HDC BitMapManager::getOption_background_bitmapDC()
+{
+	return Option_background_bitmapDC;
 }
 
