@@ -3,6 +3,8 @@
 #include "OverallVariables.h"
 #include "MouseManager.h"
 
+//Gitignore 이 잘 생성되었는지 확인해보는 주석
+
 LRESULT CALLBACK wndProc(HWND, UINT, WPARAM, LPARAM);
 const char* lpszClass = "GAME";
 
