@@ -176,9 +176,6 @@
     <ClInclude Include="GameStart.h">
       <Filter>소스 파일\States\GameStart</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="ChessHorse.h">
       <Filter>소스 파일\Objects\ChessHorsess</Filter>
     </ClInclude>
@@ -218,11 +215,9 @@
     <ClInclude Include="RankRegistration.h">
       <Filter>소스 파일\States\RankRegistration</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="chess1.rc">
-      <Filter>리소스 파일</Filter>
-    </ResourceCompile>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\images\체스말.bmp">
@@ -273,8 +268,13 @@
     <Image Include="..\images\difficultly.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
-    <Image Include="..\images\새 프로젝트 (1).bmp">
+    <Image Include="bitmap1.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="chess.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

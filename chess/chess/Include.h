@@ -9,7 +9,7 @@
 
 using namespace std;
 
-//#include "resource.h"
+#include "resource.h"
 
 
 #define BUFFER_WIDTH 1000

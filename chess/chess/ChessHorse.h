@@ -1,7 +1,7 @@
 #pragma once
 #include "Include.h"
 
-typedef struct PosXY
+struct PosXY
 {
 	int X;
 	int Y;

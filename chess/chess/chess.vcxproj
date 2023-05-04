@@ -164,9 +164,6 @@
     <ClInclude Include="StateManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="chess1.rc" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="..\images\backGround.bmp" />
     <Image Include="..\images\Buttons.bmp" />
     <Image Include="..\images\difficultly.bmp" />
@@ -178,12 +175,15 @@
     <Image Include="..\images\logo\StartLogo.bmp" />
     <Image Include="..\images\logo\you.bmp" />
     <Image Include="..\images\MainButtons.bmp" />
-    <Image Include="..\images\새 프로젝트 (1).bmp" />
     <Image Include="..\images\죽인말.bmp" />
     <Image Include="..\images\체스말.bmp" />
     <Image Include="..\images\체스판.bmp" />
     <Image Include="..\images\체스표시싸인.bmp" />
     <Image Include="..\images\쿨타임.bmp" />
+    <Image Include="bitmap1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="chess.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

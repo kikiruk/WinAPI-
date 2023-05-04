@@ -9,10 +9,17 @@ void MainGame::Progress()
 
 void MainGame::Render()
 {
-	FillRect(memDC, &crt, (HBRUSH)GetStockObject(WHITE_BRUSH)); // 기본 코드 (더블버퍼)
+	// 백그라운드를 하얀색으로 초기화 하는 코드
+	FillRect(memDC, &crt, (HBRUSH)GetStockObject(WHITE_BRUSH)); 
+	
+	// StateNow 는 현재 스테이트고 그 현재 State 에 해당하는
+	// State를 render 한다 (State 의 자식 객체) (다형성)
+	StateManager::StateNow->render(); 
 
-	StateManager::StateNow->render();
-	BitBlt(hdc, crt.left, crt.top, crt.right, crt.bottom, memDC, 0, 0, SRCCOPY); // 기본 코드 (더블버퍼)
+	//hdc 에 memDC 를 복사하여 표시한다
+	BitBlt(hdc, crt.left, crt.top, crt.right, crt.bottom, memDC, 0, 0, SRCCOPY); 
+
+
 }
 
 

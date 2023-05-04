@@ -227,7 +227,7 @@ void GameStart::render()
 
 	//test_click
 	/***************************************************************************************/
-	if (isBlackCrushWall != nullptr && !gameOver)
+	if (isBlackCrushWall != nullptr && gameOver == false)
 	{
 		renderChangeHorse(MouseManager::getX(), MouseManager::getY());
 	}
@@ -646,20 +646,24 @@ inline void GameStart::gameOverRender()
 {
 	GameOverCount++;
 
-	if (chesses[4] == nullptr)
+	if (chesses[4] == nullptr) //chesses[4] 나의 왕이 죽었을경우 
 	{
 		int Y = 700 - (GameOverCount * 5);
-		TransparentBlt(memDC, 0, (Y > 0) ? Y : 0, 1000, 700, Logo_clear_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
+		TransparentBlt(memDC, 0, (Y > 0) ? Y : 0, 1000, 700,
+			Logo_clear_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
 
 		if(Y < 0)
-			Rectangle(memDC, ClearButton.left, ClearButton.top, ClearButton.right, ClearButton.bottom);
+			Rectangle(memDC, ClearButton.left, ClearButton.top,
+				ClearButton.right, ClearButton.bottom);
 	}
 	else if(chesses[28] == nullptr)
 	{
 		int X1 = -1000 + (GameOverCount * 5);
-		TransparentBlt(memDC, (X1 < 0) ? X1 : 0, 0, 1000, 700, Logo_you_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
+		TransparentBlt(memDC, (X1 < 0) ? X1 : 0, 0, 1000, 700, 
+			Logo_you_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
 		int X2 = 1000 - (GameOverCount * 5);
-		TransparentBlt(memDC, (X2 > 0) ? X2 : 0, 0, 1000, 700, Logo_loose_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
+		TransparentBlt(memDC, (X2 > 0) ? X2 : 0, 0, 1000, 700, 
+			Logo_loose_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
 	}
 }
 
