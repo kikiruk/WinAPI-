@@ -135,7 +135,7 @@
     <ClCompile Include="Pawn.cpp" />
     <ClCompile Include="Queen.cpp" />
     <ClCompile Include="WinMain.cpp" />
-    <ClCompile Include="StatrManager.cpp" />
+    <ClCompile Include="StateManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BeforGameStart.h" />

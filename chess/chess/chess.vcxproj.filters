@@ -102,7 +102,7 @@
     <ClCompile Include="GameStart.cpp">
       <Filter>소스 파일\States\GameStart</Filter>
     </ClCompile>
-    <ClCompile Include="StatrManager.cpp">
+    <ClCompile Include="StateManager.cpp">
       <Filter>소스 파일\Managers\StateManager</Filter>
     </ClCompile>
     <ClCompile Include="ChessHorse.cpp">
