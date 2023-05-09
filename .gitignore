@@ -1,5 +1,5 @@
 ## 다음과 같은 확장자는 전체 무시
-RC*
+chess/chess/RC*
 
 ## 폴더 무시
 chess/.vs
