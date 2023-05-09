@@ -24,13 +24,3 @@ enum KEYNOW
 	DOWN,
 	SPACE
 };
-
-enum STATES
-{
-	MAIN,
-	GAME_START,
-	BEFOR_GAME_START,
-	GAME_CLEAR,
-	OPTION
-};
-

@@ -18,8 +18,6 @@ void MainGame::Render()
 
 	//hdc 에 memDC 를 복사하여 표시한다
 	BitBlt(hdc, crt.left, crt.top, crt.right, crt.bottom, memDC, 0, 0, SRCCOPY); 
-
-
 }
 
 
@@ -27,21 +25,18 @@ MainGame::MainGame() :
 	hWnd(OverallVariables::getHWnd()),
 	hdc(OverallVariables::getHdc()),
 	memDC(OverallVariables::getMemDC()),
-	crt(OverallVariables::getCrt()),
-	computer(),
-	_main(),
-	option(&computer),
-	gameStart(&computer)
+	crt(OverallVariables::getCrt())
 {
-	StateManager::StateNow = &_main;
-	StateManager::gameStart = &gameStart;
-	StateManager::_main = &_main;
-	StateManager::option = &option;
-	StateManager::beforGameStart = &beforGameStart;
+	StateManager::initialize();
 }
 
 
 MainGame::~MainGame()
 {
+	delete StateManager::_main;
+	delete StateManager::option;
+	delete StateManager::gameStart;
+	delete StateManager::beforGameStart;
+	delete StateManager::game_Clear;
 
 }

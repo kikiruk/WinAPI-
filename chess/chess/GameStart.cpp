@@ -150,7 +150,7 @@ void GameStart::progress()
 		chessHorseMoveProgress(selected_horse, _clickIndexNow);
 
 		// 컴퓨터를 움직이게 하는 함수 이부분을 주석처리하면 컴퓨터는 멈춘다 
-		//computer->progress(chesses, this); 
+		computer->progress(chesses, this); 
 
 		for (int i = 0; i < 32; i++)
 		{
@@ -245,7 +245,8 @@ void GameStart::render()
 
 void GameStart::initialize()
 {
-	release();
+	// initialize() 하자마자 바로 메모리 할당 해제 부터 진행하는데 왜이렇게 적었었는진 모르겠다
+	release(); 
 
 	for (short i = 0; i < 32; i++)
 	{
@@ -715,4 +716,5 @@ GameStart::GameStart(Computer* computer)
 GameStart::~GameStart()
 {
 	release();
+	delete computer; // 이 객체가 소멸될때 같이 컴퓨터도 소멸된다. 
 }
