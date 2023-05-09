@@ -55,11 +55,16 @@ void GameStart::progress()
 						{
 							if (chesses[j] != nullptr)
 							{
+								/*********************************
+								특정 체스말이 목적 좌표에 도착하였을때 그 자리에 있는 말을 죽었다고 표시한다.
+								대신에 색깔이 다른 말 만을 죽이므로 , 만약 색깔이 다르지 않은 말을 죽이라고 하면
+								그냥 자신 스스로가 죽는다.
+								**********************************/
 								if (chesses[j]->locationNow == AttackHorsess[i]->locationNow //공격중인 말이 목적지에 도착하였고
 									&& !(chesses[j]->isWhite) == AttackHorsess[i]->isWhite //공격중인 말과 목적지에 있던 말의 색깔이 다르고,
 									&& !(chesses[j]->isMoveing))							//공격하는 말이 움직이는 중이 아닐경우에
 								{															//죽었음을 표시한다
-									chesses[j]->die = true;
+									chesses[j]->die = true;									
 
 									//selected_horse 가 죽었는데도 renderCanGo 가 표시되는것 방지
 									if (chesses[j] == selected_horse)
@@ -144,7 +149,8 @@ void GameStart::progress()
 		// 현재 선택(클릭)된 말이갈수있는곳을 클릭한 경우에 그곳으로 움직이게하는 기능및 AttackHorsess 등록기능
 		chessHorseMoveProgress(selected_horse, _clickIndexNow);
 
-		computer->progress(chesses, this);
+		// 컴퓨터를 움직이게 하는 함수 이부분을 주석처리하면 컴퓨터는 멈춘다
+		computer->progress(chesses, this); 
 
 		for (int i = 0; i < 32; i++)
 		{
@@ -398,7 +404,7 @@ inline void GameStart::chessHorseMoveProgress(ChessHorse* chesseHorse,int _click
 	{
 
 		//_clickIndexNow > -1 && _clickIndexNow < 65 이걸안넣으면 Queen 에서 0번째 칸으로 가면 calCulateCanGo에 -1 이 들어가서 에러남
-		// calCulateCanGo 에 0 이하나 64 이상의 숫자가 들어가게 해선 안됌.
+		// calCulateCanGo 에 0 이하나 64 이상의 숫자가 들어가게 해선 안됨.
 		if (_clickIndexNow > -1 && _clickIndexNow < 65 && chesseHorse->calCulateCanGo(chesses, _clickIndexNow))
 		{
 			chesseHorse->toGo = _clickIndexNow;			//클릭한 위치로 체스말의 목표 위치 설정

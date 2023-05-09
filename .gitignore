@@ -4,3 +4,4 @@ RC*
 ## 폴더 무시
 chess/.vs
 chess/x64
+chess/chess/x64

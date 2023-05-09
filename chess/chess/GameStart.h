@@ -36,7 +36,7 @@ private:
 
 	ChessHorse* chesses[32] = {nullptr, };
 	ChessHorse* toChangeHorse[48] = {nullptr, };
-	ChessHorse* AttackHorsess[32] = { nullptr, };
+	ChessHorse* AttackHorsess[32] = { nullptr, }; //움직이고 있는 체스말을 담고 있다 . 
 	ChessHorse* DieWhiteHorsess[16] = { nullptr, };
 	ChessHorse* DieBlackHorsess[16] = { nullptr, };
 
@@ -50,9 +50,9 @@ private:
 
 //버튼관련 멤버들
 private:
-	bool isStop;
+	bool isStop; //게임이 멈춰있는지 여부 나타냄
 	int bottonCount;
-	ChessHorse** isBlackCrushWall;
+	ChessHorse** isBlackCrushWall; 
 	bool test_click; //테스트용,나중에지울것
 
 public:
@@ -68,9 +68,9 @@ private:
 	inline void chessHorseDieProgress(ChessHorse* chessHorse);
 
 private:
-	bool isWhiteCheckMate;
+	bool isWhiteCheckMate; 
 	bool isBlackCHeckMate;
-	int WhiteCheckMateCount;
+	int WhiteCheckMateCount; // checkMate 표시를 화면에 띄울때 그 글씨의 애니메이션을 띄우기 위해 쓰이는 변수
 	int BlackCheckMateCount;
 	void renderCheckMate(bool isWhite);
 	void renderChangeHorse(int MouseX, int MouseY);
