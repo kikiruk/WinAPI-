@@ -716,5 +716,4 @@ GameStart::GameStart(Computer* computer)
 GameStart::~GameStart()
 {
 	release();
-	delete computer; // 이 객체가 소멸될때 같이 컴퓨터도 소멸된다. 
 }

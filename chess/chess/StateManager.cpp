@@ -14,7 +14,7 @@ void StateManager::initialize()
 	// 이 initialize 함수는 MainGame생성자에서 호출되어진다
 
 	_main = new Main;
-	Computer* computer = new Computer;
+	computer = new Computer;
 	option = new Option(computer);
 	gameStart = new GameStart(computer);
 	beforGameStart = new BeforGameStart;

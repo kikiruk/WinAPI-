@@ -31,6 +31,9 @@ private:
 	StateManager() = delete;
 
 private:
+
+	//Computer 은 State 는 아니지만 Option 과 GameStart가 접근이 가능해야하기에 여기에 정의해둠
+	static Computer* computer; 
 	static State* StateNow;
 	static Main* _main;
 	static Option* option;

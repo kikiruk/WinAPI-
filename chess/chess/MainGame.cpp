@@ -38,5 +38,5 @@ MainGame::~MainGame()
 	delete StateManager::gameStart;
 	delete StateManager::beforGameStart;
 	delete StateManager::game_Clear;
-
+	delete StateManager::computer;
 }
