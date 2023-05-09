@@ -2,7 +2,6 @@
 #include "State.h"
 #include "ChessHorse.h"
 #include "Computer.h"
-
 #include "King.h"
 #include "Bishop.h"
 #include "Look.h"
@@ -30,12 +29,11 @@ private:
 	RECT StopPlayButton;
 	RECT RestartButton;
 	RECT GotoMainButton;
-	RECT ClearButton;
 
 	ChessHorse* selected_horse;
 
-	ChessHorse* chesses[32] = {nullptr, };
-	ChessHorse* toChangeHorse[48] = {nullptr, };
+	ChessHorse* chesses[32] = { nullptr, };
+	ChessHorse* toChangeHorse[48] = { nullptr, };
 	ChessHorse* AttackHorsess[32] = { nullptr, }; //움직이고 있는 체스말을 담고 있다 . 
 	ChessHorse* DieWhiteHorsess[16] = { nullptr, };
 	ChessHorse* DieBlackHorsess[16] = { nullptr, };

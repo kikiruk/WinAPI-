@@ -6,7 +6,6 @@ Option* StateManager::option = nullptr;
 GameStart* StateManager::gameStart = nullptr;
 BeforGameStart* StateManager::beforGameStart = nullptr;
 Game_Clear* StateManager::game_Clear = nullptr;
-RankRegistration* StateManager::rankRegistration = nullptr;
 
 Main* StateManager::getMainState()
 {
@@ -32,9 +31,4 @@ BeforGameStart* StateManager::getBeforGameStartState()
 Game_Clear* StateManager::getGame_Clear()
 {
 	return game_Clear;
-}
-
-RankRegistration* StateManager::getRankRegistrationr()
-{
-	return rankRegistration;
 }

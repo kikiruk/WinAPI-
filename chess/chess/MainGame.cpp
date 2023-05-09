@@ -38,8 +38,6 @@ MainGame::MainGame() :
 	StateManager::_main = &_main;
 	StateManager::option = &option;
 	StateManager::beforGameStart = &beforGameStart;
-	StateManager::rankRegistration = &rankRegistration;
-
 }
 
 

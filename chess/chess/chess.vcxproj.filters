@@ -79,9 +79,6 @@
     <Filter Include="소스 파일\States\Game_Clear">
       <UniqueIdentifier>{fff1fad4-d66e-4d9f-8ed5-a6a4c867c6f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\States\RankRegistration">
-      <UniqueIdentifier>{f30713f4-fc75-41e0-8e2f-28eeb9c52f47}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -143,9 +140,6 @@
     </ClCompile>
     <ClCompile Include="Game_Clear.cpp">
       <Filter>소스 파일\States\Game_Clear</Filter>
-    </ClCompile>
-    <ClCompile Include="RankRegistration.cpp">
-      <Filter>소스 파일\States\RankRegistration</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -211,9 +205,6 @@
     </ClInclude>
     <ClInclude Include="Game_Clear.h">
       <Filter>소스 파일\States\Game_Clear</Filter>
-    </ClInclude>
-    <ClInclude Include="RankRegistration.h">
-      <Filter>소스 파일\States\RankRegistration</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>헤더 파일</Filter>

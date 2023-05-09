@@ -5,7 +5,14 @@
 #include "GameStart.h"
 #include "BeforGameStart.h"
 #include "Game_Clear.h"
-#include "RankRegistration.h"
+
+/***********************************
+새로운 State 를 만들고 싶으면 State 클래스를 상속 받는 클래스를 만든 후
+여기서 등록하면 된다 
+Include.h 에 STATES enum 에도 등록해야한다
+그리고 게임속에서 해당 State 로 이동하고 싶으면 
+setStateNow 함수를 호출하면 된다
+************************************/
 
 class StateManager
 {
@@ -18,7 +25,6 @@ private:
 	static GameStart* gameStart;
 	static BeforGameStart* beforGameStart;
 	static Game_Clear* game_Clear;
-	static RankRegistration* rankRegistration;
 
 public:
 	static void setStateNow(STATES state)
@@ -45,10 +51,6 @@ public:
 			StateNow = game_Clear;
 			break;
 
-		case REGISTER:
-			StateNow = rankRegistration;
-			break;
-
 		}
 	};
 
@@ -58,6 +60,5 @@ public:
 	static GameStart* getGameStartState();
 	static BeforGameStart* getBeforGameStartState();
 	static Game_Clear* getGame_Clear();
-	static RankRegistration* getRankRegistrationr();
 };
 

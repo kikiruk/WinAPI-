@@ -4,7 +4,6 @@
 #include "GameStart.h"
 #include "BeforGameStart.h"
 #include "Game_Clear.h"
-#include "RankRegistration.h"
 
 class MainGame
 {
@@ -20,7 +19,6 @@ private:
 	Option option;
 	GameStart gameStart;
 	BeforGameStart beforGameStart;
-	RankRegistration rankRegistration;
 	Game_Clear game_Clear;
 
 public:

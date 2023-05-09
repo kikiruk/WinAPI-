@@ -149,8 +149,8 @@ void GameStart::progress()
 		// 현재 선택(클릭)된 말이갈수있는곳을 클릭한 경우에 그곳으로 움직이게하는 기능및 AttackHorsess 등록기능
 		chessHorseMoveProgress(selected_horse, _clickIndexNow);
 
-		// 컴퓨터를 움직이게 하는 함수 이부분을 주석처리하면 컴퓨터는 멈춘다
-		computer->progress(chesses, this); 
+		// 컴퓨터를 움직이게 하는 함수 이부분을 주석처리하면 컴퓨터는 멈춘다 
+		//computer->progress(chesses, this); 
 
 		for (int i = 0; i < 32; i++)
 		{
@@ -629,14 +629,6 @@ inline void GameStart::buttonProgress(int MouseX, int MouseY)
 			StateManager::setStateNow(MAIN);
 		}
 
-		if (gameOver && GameOverCount > 300)
-		{
-			if (MouseX > ClearButton.left && ClearButton.right > MouseX
-				&& MouseY > ClearButton.top && ClearButton.bottom > MouseY)
-			{
-				StateManager::setStateNow(REGISTER);
-			}
-		}
 	}
 }
 
@@ -657,10 +649,6 @@ inline void GameStart::gameOverRender()
 		int Y = 700 - (GameOverCount * 5);
 		TransparentBlt(memDC, 0, (Y > 0) ? Y : 0, 1000, 700,
 			Logo_clear_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
-
-		if(Y < 0)
-			Rectangle(memDC, ClearButton.left, ClearButton.top,
-				ClearButton.right, ClearButton.bottom);
 	}
 	else if(chesses[28] == nullptr)
 	{
@@ -709,7 +697,6 @@ GameStart::GameStart(Computer* computer)
 	StopPlayButton = { 385,606,415,635 }; //가로세로 30
 	RestartButton = { 558,606,588,636 }; //가로세로 30
 	GotoMainButton = { 867,577,967,647 }; //가로 100 세로 70
-	ClearButton = { 407, 403, 607, 453 };
 	gameOver = false;
 	selected_horse = nullptr;
 	isStop = false;
