@@ -1,11 +1,11 @@
 #include "StateManager.h"
 
+Computer* StateManager::computer = nullptr; // 초기화 안해주면 컴파일 에러남
 State* StateManager::StateNow = nullptr;
 Main* StateManager::_main = nullptr;
 Option* StateManager::option = nullptr;
 GameStart* StateManager::gameStart = nullptr;
 BeforGameStart* StateManager::beforGameStart = nullptr;
-Game_Clear* StateManager::game_Clear = nullptr;
 
 void StateManager::initialize()
 {
@@ -18,8 +18,16 @@ void StateManager::initialize()
 	option = new Option(computer);
 	gameStart = new GameStart(computer);
 	beforGameStart = new BeforGameStart;
-	game_Clear = new Game_Clear;
 	StateNow = _main;
+}
+
+void StateManager::release()
+{
+	delete _main;
+	delete computer;
+	delete option;
+	delete gameStart;
+	delete beforGameStart;
 }
 
 Main* StateManager::getMainState()
@@ -41,9 +49,4 @@ Option* StateManager::getOptionState()
 BeforGameStart* StateManager::getBeforGameStartState()
 {
 	return beforGameStart;
-}
-
-Game_Clear* StateManager::getGame_Clear()
-{
-	return game_Clear;
 }

@@ -1,4 +1,5 @@
 #pragma once
+#include "OverallVariables.h"
 
 class MainGame
 {

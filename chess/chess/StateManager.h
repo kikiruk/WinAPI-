@@ -4,7 +4,6 @@
 #include "Option.h"
 #include "GameStart.h"
 #include "BeforGameStart.h"
-#include "Game_Clear.h"
 #include "Computer.h"
 
 /***********************************
@@ -19,7 +18,6 @@ enum STATES
 	MAIN,
 	GAME_START,
 	BEFOR_GAME_START,
-	GAME_CLEAR,
 	OPTION
 };
 
@@ -39,10 +37,10 @@ private:
 	static Option* option;
 	static GameStart* gameStart;
 	static BeforGameStart* beforGameStart;
-	static Game_Clear* game_Clear;
 
 private:
 	static void initialize();
+	static void release();
 
 public:
 	static void setStateNow(STATES state)
@@ -64,11 +62,6 @@ public:
 		case BEFOR_GAME_START:
 			StateNow = beforGameStart;
 			break;
-
-		case GAME_CLEAR:
-			StateNow = game_Clear;
-			break;
-
 		}
 	};
 
@@ -78,6 +71,5 @@ public:
 	static Option* getOptionState();
 	static GameStart* getGameStartState();
 	static BeforGameStart* getBeforGameStartState();
-	static Game_Clear* getGame_Clear();
 };
 

@@ -1,5 +1,5 @@
+#pragma once
 #include "MainGame.h"
-#include "OverallVariables.h"
 #include "StateManager.h"
 
 void MainGame::Progress()
@@ -33,10 +33,5 @@ MainGame::MainGame() :
 
 MainGame::~MainGame()
 {
-	delete StateManager::_main;
-	delete StateManager::option;
-	delete StateManager::gameStart;
-	delete StateManager::beforGameStart;
-	delete StateManager::game_Clear;
-	delete StateManager::computer;
+	StateManager::release();
 }

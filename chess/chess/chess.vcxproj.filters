@@ -76,9 +76,6 @@
     <Filter Include="소스 파일\States\BeforGameStart">
       <UniqueIdentifier>{f762133e-06f7-4db5-b3f2-81e50733b353}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\States\Game_Clear">
-      <UniqueIdentifier>{fff1fad4-d66e-4d9f-8ed5-a6a4c867c6f4}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -137,9 +134,6 @@
     </ClCompile>
     <ClCompile Include="BeforGameStart.cpp">
       <Filter>소스 파일\States\BeforGameStart</Filter>
-    </ClCompile>
-    <ClCompile Include="Game_Clear.cpp">
-      <Filter>소스 파일\States\Game_Clear</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -202,9 +196,6 @@
     </ClInclude>
     <ClInclude Include="BeforGameStart.h">
       <Filter>소스 파일\States\BeforGameStart</Filter>
-    </ClInclude>
-    <ClInclude Include="Game_Clear.h">
-      <Filter>소스 파일\States\Game_Clear</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>헤더 파일</Filter>

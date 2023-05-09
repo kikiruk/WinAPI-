@@ -1,5 +1,4 @@
 #pragma once
-#include "Include.h"
 #include "OverallVariables.h"
 // State 폴더 안에 있는 모든 Class 들은 State 를 상속 받는다 
 
