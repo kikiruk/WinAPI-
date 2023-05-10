@@ -259,6 +259,9 @@
     <Image Include="..\images\logo\120_GameStartBackground.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
+    <Image Include="..\images\logo\121_setDifficult.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="chess.rc">

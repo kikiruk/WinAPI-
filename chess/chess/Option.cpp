@@ -68,8 +68,9 @@ Option::Option(Computer* computer)//생성자
 	difficultly_Buttons_bitmapDC = BitMapManager::getDifficultly_bitmapDC();
 	option_background_bitmapDC = BitMapManager::getOption_background_bitmapDC(); // 가로 1000 세로 822
 	BackGround_bitmapDC = BitMapManager::getBackGround_bitmapDC();
+	Option_background_bitmapDC = BitMapManager::getSet_difficultly_logo_bitmapDC();
 	GotoMainButton = { 867,577,967,647 }; //가로 100 세로 70
-	difficulty = {0,308,50,358}; //가로 50 세로 50
+	difficulty = {119,445,169,495}; //가로 50 세로 50
 
 	this->computer = computer;
 }
@@ -81,7 +82,11 @@ Option::~Option()
 
 inline void Option::buttonRender(int MouseX, int MouseY)
 {
-	//difficultly
+	// 난이도 설정 버튼 위에 글씨 262
+	TransparentBlt(memDC, difficulty.left + 22 , difficulty.top - 90, 200, 114,
+		Option_background_bitmapDC, 0, 0, 295, 121, RGB(255, 0, 255));
+
+	//difficultly = { 119,319,50,358 }; 
 	for (int i = 0; i < 5; i++)
 	{
 		if (i == computer->difficulty - 1) //현재 선택된 difficulty (난이도) 에해당되는것만 버튼 색깔 다르게 함 

@@ -1,5 +1,6 @@
 #include "BitMapManager.h"
 #include "OverallVariables.h"
+#include <assert.h>
 
 HDC BitMapManager::ChessHorse_bitmapDC = nullptr;
 HDC BitMapManager::GameStart_bitmapDC = nullptr;
@@ -19,6 +20,7 @@ HDC	BitMapManager::MainButtons_bitmapDC = nullptr;
 HDC	BitMapManager::Difficultly_bitmapDC = nullptr;
 HDC	BitMapManager::Option_background_bitmapDC = nullptr;
 HDC	BitMapManager::GameStart_background_bitmapDC = nullptr;
+HDC	BitMapManager::Set_difficultly_logo_bitmapDC = nullptr;
 
 void BitMapManager::initialize()
 {
@@ -113,6 +115,11 @@ void BitMapManager::initialize()
 	GameStart_background_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
 	HBITMAP GameStart_background_bitmapDC_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(123));
 	HBITMAP GameStart_background_bitmapDC_oldBitMap = (HBITMAP)SelectObject(GameStart_background_bitmapDC, GameStart_background_bitmapDC_myBitMap);
+
+	//난이도 설정 버튼 위에 글씨
+	Set_difficultly_logo_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
+	HBITMAP Set_difficultly_logo_bitmapDC_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(125));
+	HBITMAP Set_difficultly_logo_bitmapDC_oldBitMap = (HBITMAP)SelectObject(Set_difficultly_logo_bitmapDC, Set_difficultly_logo_bitmapDC_myBitMap);
 }
 
 HDC BitMapManager::getChessHorse_bitmapDC()
@@ -203,5 +210,10 @@ HDC BitMapManager::getOption_background_bitmapDC()
 HDC BitMapManager::getGameStart_background_bitmapDC()
 {
 	return GameStart_background_bitmapDC;
+}
+
+HDC BitMapManager::getSet_difficultly_logo_bitmapDC()
+{
+	return Set_difficultly_logo_bitmapDC;
 }
 

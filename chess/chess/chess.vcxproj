@@ -179,6 +179,7 @@
     <Image Include="..\images\logo\118_you.bmp" />
     <Image Include="..\images\logo\119_설정배경화면.bmp" />
     <Image Include="..\images\logo\120_GameStartBackground.bmp" />
+    <Image Include="..\images\logo\121_setDifficult.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="chess.rc" />

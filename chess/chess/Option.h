@@ -9,6 +9,7 @@ private:
 	HDC	difficultly_Buttons_bitmapDC;
 	HDC	option_background_bitmapDC;
 	HDC	BackGround_bitmapDC;
+	HDC	Option_background_bitmapDC;
 	RECT GotoMainButton;
 	RECT difficulty;
 	Computer* computer;

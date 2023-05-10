@@ -19,6 +19,11 @@ class BitMapManager
 	// 파라메터 창에표시될 왼쪽, 위쪽, 가로길이 , 세로길이 / 원본사진 자르기위한 시작점 왼쪽, 위쪽, 자를가로길이, 세로길이 이다
 	// 전체화면 크기 가로 1000 세로 700
 
+	//Rectangle(memDC, 왼쪽위꼭짓점X, 왼쪽위꼭짓점Y, 오른쪽아래꼭짓점X, 오른쪽아래꼭짓점Y); 를통해서 미리 놓을곳에 테스트 해보고 놓는것을 추천
+	
+	//"리소스를 로드할 수 없습니다" 나올 경우에 그림판에서 bmp 파일로 변환하기 눌러서 변환할것
+	//그냥 임의로 파일명 변경하면 로드안됨
+
 private:
 	static HDC ChessHorse_bitmapDC;//체스말	
 	static HDC GameStart_bitmapDC;//체스판
@@ -37,7 +42,8 @@ private:
 	static HDC MainButtons_bitmapDC;//시작할때 옵션버튼, 시작버튼
 	static HDC Difficultly_bitmapDC;//어려움설정할때
 	static HDC Option_background_bitmapDC; // 옵션 배경화면 
-	static HDC GameStart_background_bitmapDC; // 옵션 배경화면 
+	static HDC GameStart_background_bitmapDC; // 빨간색 카페트 배경
+	static HDC Set_difficultly_logo_bitmapDC; // 난이도 설정 버튼 위에 글자
 
 public:
 	static void initialize();
@@ -61,5 +67,6 @@ public:
 	static HDC getDifficultly_bitmapDC();
 	static HDC getOption_background_bitmapDC();
 	static HDC getGameStart_background_bitmapDC();
+	static HDC getSet_difficultly_logo_bitmapDC();
 };
 
