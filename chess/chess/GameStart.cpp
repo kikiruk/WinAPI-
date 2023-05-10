@@ -130,6 +130,9 @@ void GameStart::progress()
 					{
 						isBlackCHeckMate = true;
 						isNotBlackCheckmate = false;
+
+
+
 					}
 				}
 			}
@@ -233,6 +236,7 @@ void GameStart::render()
 
 	//test_click
 	/***************************************************************************************/
+	
 	if (isBlackCrushWall != nullptr && gameOver == false)
 	{
 		renderChangeHorse(MouseManager::getX(), MouseManager::getY());
@@ -263,6 +267,7 @@ void GameStart::initialize()
 		DieBlackHorsess[i] = nullptr;
 	}
 
+	//체스판에 체스말을 배치한다 
 	chesses[0] = new Look(0,true);chesses[1] = new Night(1,true);chesses[2] = new Bishop(2,true);chesses[3] = new Queen(3,true);
 	chesses[4] = new King(4, true); chesses[5] = new Bishop(5, true); chesses[6] = new Night(6, true); chesses[7] = new Look(7, true);
 	chesses[8] = new Pawn(8, true); chesses[9] = new Pawn(9, true); chesses[10] = new Pawn(10, true); chesses[11] = new Pawn(11, true);
@@ -272,6 +277,7 @@ void GameStart::initialize()
 	chesses[26] = new Bishop(58); chesses[27] = new Queen(59); chesses[28] = new King(60); chesses[29] = new Bishop(61); chesses[30] = new Night(62);
 	chesses[31] = new Look(63);
 
+	//Pawn 이 반대편 벽에 닿았을때 바뀌어질 여왕 룩 비숍을 미리 할당함
 	toChangeHorse[0] = new Queen(0,true);toChangeHorse[1] = new Queen(0,true);toChangeHorse[2] = new Queen(0,true);
 	toChangeHorse[3] = new Queen(0,true);toChangeHorse[4] = new Queen(0,true);toChangeHorse[5] = new Queen(0,true);
 	toChangeHorse[6] = new Queen(0,true);toChangeHorse[7] = new Queen(0,true);toChangeHorse[8] = new Look(0,true);
@@ -354,6 +360,9 @@ inline void GameStart::selectHorse(int MouseX,int MouseY)
 
 void GameStart::renderMap()
 {
+	//빨간 카펫 배경화면 그리기 
+	TransparentBlt(memDC, 0, 0, 1000, 700, GameStart_background_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
+
 	//체스판 그리기
 	TransparentBlt(memDC, 240, 80, 497, 497, bitmapDC, 0, 0, 800, 800, RGB(255, 0, 255));
 
@@ -694,6 +703,7 @@ GameStart::GameStart(Computer* computer)
 	Buttons_bitmapDC = BitMapManager::getButtons_bitmapDC();
 	CheckMate_black_bitmapDC = BitMapManager::getCheckMate_black_bitmapDC();
 	CheckMate_white_bitmapDC = BitMapManager::getCheckMate_white_bitmapDC();
+	GameStart_background_bitmapDC = BitMapManager::getGameStart_background_bitmapDC();
 
 	StopPlayButton = { 385,606,415,635 }; //가로세로 30
 	RestartButton = { 558,606,588,636 }; //가로세로 30

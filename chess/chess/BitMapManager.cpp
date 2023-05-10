@@ -18,6 +18,7 @@ HDC	BitMapManager::StartLogo_bitmapDC = nullptr;
 HDC	BitMapManager::MainButtons_bitmapDC = nullptr;
 HDC	BitMapManager::Difficultly_bitmapDC = nullptr;
 HDC	BitMapManager::Option_background_bitmapDC = nullptr;
+HDC	BitMapManager::GameStart_background_bitmapDC = nullptr;
 
 void BitMapManager::initialize()
 {
@@ -107,6 +108,11 @@ void BitMapManager::initialize()
 	Option_background_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
 	HBITMAP Option_background_bitmapDC_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(122));
 	HBITMAP Option_background_bitmapDC_oldBitMap = (HBITMAP)SelectObject(Option_background_bitmapDC, Option_background_bitmapDC_myBitMap);
+
+	//게임화면에 빨간색 카펫 배경화면
+	GameStart_background_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
+	HBITMAP GameStart_background_bitmapDC_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(123));
+	HBITMAP GameStart_background_bitmapDC_oldBitMap = (HBITMAP)SelectObject(GameStart_background_bitmapDC, GameStart_background_bitmapDC_myBitMap);
 }
 
 HDC BitMapManager::getChessHorse_bitmapDC()
@@ -192,5 +198,10 @@ HDC BitMapManager::getDifficultly_bitmapDC()
 HDC BitMapManager::getOption_background_bitmapDC()
 {
 	return Option_background_bitmapDC;
+}
+
+HDC BitMapManager::getGameStart_background_bitmapDC()
+{
+	return GameStart_background_bitmapDC;
 }
 

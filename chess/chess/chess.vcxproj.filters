@@ -202,57 +202,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\images\체스말.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\체스판.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\체스표시싸인.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\쿨타임.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\죽인말.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\logo\gameStart.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\logo\clear.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\logo\you.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\logo\loose.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\Buttons.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\backGround.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\logo\checkMate_black.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\logo\checkMate_white.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\logo\StartLogo.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\MainButtons.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\images\difficultly.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="bitmap1.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
     <Image Include="..\images\logo\117_StartLogo - 복사본.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
@@ -305,6 +254,9 @@
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="..\images\logo\119_설정배경화면.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\120_GameStartBackground.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

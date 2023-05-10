@@ -16,6 +16,8 @@ class BitMapManager
 	crTransparent: 출력할 비트맵에서 투명한 색상 값 (예를 들어 RGB(255,0,255)는 마젠타를 의미)
 	bAlpha: 출력할 비트맵의 알파 값 (0~255 사이의 값)
 	**********************************************************/
+	// 파라메터 창에표시될 왼쪽, 위쪽, 가로길이 , 세로길이 / 원본사진 자르기위한 시작점 왼쪽, 위쪽, 자를가로길이, 세로길이 이다
+	// 전체화면 크기 가로 1000 세로 700
 
 private:
 	static HDC ChessHorse_bitmapDC;//체스말	
@@ -35,6 +37,7 @@ private:
 	static HDC MainButtons_bitmapDC;//시작할때 옵션버튼, 시작버튼
 	static HDC Difficultly_bitmapDC;//어려움설정할때
 	static HDC Option_background_bitmapDC; // 옵션 배경화면 
+	static HDC GameStart_background_bitmapDC; // 옵션 배경화면 
 
 public:
 	static void initialize();
@@ -57,5 +60,6 @@ public:
 	static HDC getMainButtons_bitmapDC();
 	static HDC getDifficultly_bitmapDC();
 	static HDC getOption_background_bitmapDC();
+	static HDC getGameStart_background_bitmapDC();
 };
 

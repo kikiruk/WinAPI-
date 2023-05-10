@@ -169,9 +169,6 @@
     <Image Include="..\images\109_체스판.bmp" />
     <Image Include="..\images\110_체스표시싸인.bmp" />
     <Image Include="..\images\111_쿨타임.bmp" />
-    <Image Include="..\images\backGround.bmp" />
-    <Image Include="..\images\Buttons.bmp" />
-    <Image Include="..\images\difficultly.bmp" />
     <Image Include="..\images\logo\112_checkMate_black.bmp" />
     <Image Include="..\images\logo\113_checkMate_white.bmp" />
     <Image Include="..\images\logo\114_clear.bmp" />
@@ -181,20 +178,7 @@
     <Image Include="..\images\logo\117_StartLogo.bmp" />
     <Image Include="..\images\logo\118_you.bmp" />
     <Image Include="..\images\logo\119_설정배경화면.bmp" />
-    <Image Include="..\images\logo\checkMate_black.bmp" />
-    <Image Include="..\images\logo\checkMate_white.bmp" />
-    <Image Include="..\images\logo\clear.bmp" />
-    <Image Include="..\images\logo\gameStart.bmp" />
-    <Image Include="..\images\logo\loose.bmp" />
-    <Image Include="..\images\logo\StartLogo.bmp" />
-    <Image Include="..\images\logo\you.bmp" />
-    <Image Include="..\images\MainButtons.bmp" />
-    <Image Include="..\images\죽인말.bmp" />
-    <Image Include="..\images\체스말.bmp" />
-    <Image Include="..\images\체스판.bmp" />
-    <Image Include="..\images\체스표시싸인.bmp" />
-    <Image Include="..\images\쿨타임.bmp" />
-    <Image Include="bitmap1.bmp" />
+    <Image Include="..\images\logo\120_GameStartBackground.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="chess.rc" />

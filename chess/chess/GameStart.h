@@ -25,6 +25,7 @@ private:
 	HDC	Buttons_bitmapDC;
 	HDC	CheckMate_black_bitmapDC;
 	HDC	CheckMate_white_bitmapDC;
+	HDC	GameStart_background_bitmapDC;
 
 	RECT StopPlayButton;
 	RECT RestartButton;
