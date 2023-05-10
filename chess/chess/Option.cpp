@@ -60,8 +60,6 @@ void Option::render()
 	puts(buf_3);
 	TextOut(memDC, 0, 40, TEXT(buf_3), strlen(buf_3));
 	/***************************************************************************************/
-
-
 }
 
 Option::Option(Computer* computer)//»ý¼ºÀÚ
