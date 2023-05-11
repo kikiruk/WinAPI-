@@ -3,11 +3,6 @@
 #include "BitMapManager.h"
 #include "StateManager.h"
 
-/*************************화면에 수치표시용 (완성후삭제)*********************************/
-#pragma warning(disable:4996)
-#include <stdlib.h>
-/*************************************************************************************/
-
 inline int clickIndexNow()
 {
 		return ((MouseManager::getX() - 240) / 62 + (((MouseManager::getY() - 80) / 62) * 8));
@@ -209,33 +204,6 @@ void GameStart::render()
 
 	if(isBlackCHeckMate)
 		renderCheckMate(false);
-
-	/*************************화면에 수치표시용 (완성후삭제)*********************************/
-	char buf[256];
-	strcpy(buf, "X : ");
-	int len = 4;
-	len += sprintf(buf + len, "%d ", MouseManager::getX());
-	puts(buf);
-	TextOut(memDC, 0, 0, TEXT(buf), strlen(buf));
-
-	char buf_2[256];
-	strcpy(buf_2, "Y : ");
-	int len_2 = 4;
-	len_2 += sprintf(buf_2 + len_2, "%d ", MouseManager::getY());
-	puts(buf_2);
-	TextOut(memDC, 0, 20, TEXT(buf_2), strlen(buf_2));
-
-	char buf_3[256];
-	strcpy(buf_3, "test_click : ");
-	int len_3 = 13;
-	len_3 += sprintf(buf_3 + len_3, "%d ", test_click);
-	puts(buf_3);
-
-	TextOut(memDC, 0, 40, TEXT(buf_3), strlen(buf_3));
-
-
-	//test_click
-	/***************************************************************************************/
 	
 	if (isBlackCrushWall != nullptr && gameOver == false)
 	{

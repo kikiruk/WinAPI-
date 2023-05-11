@@ -72,3 +72,39 @@ public:
 	static HDC getChange_pawn_window_bitmapDC();
 };
 
+
+/******아래의 코드를 사용하면 런타임중에 좌표를 알수있고 이미지를 입력할때 좌표를 찾기 유리하다******/
+
+//필요한 헤더파일
+/*************************화면에 수치표시용 (완성후삭제)*********************************/
+#pragma warning(disable:4996)
+#include <stdlib.h>
+/*************************************************************************************/
+
+/*************************화면에 수치표시용 (완성후삭제)*********************************/
+//char buf[256];
+//strcpy(buf, "X : ");
+//int len = 4;
+//len += sprintf(buf + len, "%d ", MouseManager::getX());
+//puts(buf);
+//TextOut(memDC, 0, 0, TEXT(buf), strlen(buf));
+//
+//char buf_2[256];
+//strcpy(buf_2, "Y : ");
+//int len_2 = 4;
+//len_2 += sprintf(buf_2 + len_2, "%d ", MouseManager::getY());
+//puts(buf_2);
+//TextOut(memDC, 0, 20, TEXT(buf_2), strlen(buf_2));
+//
+//char buf_3[256];
+//strcpy(buf_3, "test_click : ");
+//int len_3 = 13;
+//len_3 += sprintf(buf_3 + len_3, "%d ", test_click);
+//puts(buf_3);
+//
+//TextOut(memDC, 0, 40, TEXT(buf_3), strlen(buf_3));
+//
+//
+////test_click
+/***************************************************************************************/
+

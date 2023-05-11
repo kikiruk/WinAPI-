@@ -3,12 +3,6 @@
 #include "StateManager.h"
 #include "BitMapManager.h"
 
-/*************************화면에 수치표시용 (완성후삭제)*********************************/
-
-#pragma warning(disable:4996)
-#include <stdlib.h>
-/*************************************************************************************/
-
 //이곳은 게임 켜자마자 있는 화면이다 
 
 void Main::progress()
@@ -35,23 +29,6 @@ void Main::render()
 	TransparentBlt(memDC, 0, 0, 1000, 700, StartLogo_bitmapDC, 0, 0, 1000, 700, RGB(255, 0, 255));
 
 	buttonRender(MouseManager::getX(), MouseManager::getY());
-
-	/*************************화면에 수치표시용 (완성후삭제)*********************************/
-	char buf[256];
-	strcpy(buf, "X : ");
-	int len = 4;
-	len += sprintf(buf + len, "%d ", MouseManager::getX());
-	puts(buf);
-	TextOut(memDC, 0, 0, TEXT(buf), strlen(buf));
-	
-	char buf_2[256];
-	strcpy(buf_2, "Y : ");
-	int len_2 = 4;
-	len_2 += sprintf(buf_2 + len_2, "%d ", MouseManager::getY());
-	puts(buf_2);
-	
-	TextOut(memDC, 0, 20, TEXT(buf_2), strlen(buf_2));
-	/***************************************************************************************/
 }
 
 inline void Main::buttonRender(int MouseX, int MouseY)

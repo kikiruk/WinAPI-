@@ -4,12 +4,6 @@
 #include "BitMapManager.h"
 #include "Computer.h"
 
-/*************************화면에 수치표시용 (완성후삭제)*********************************/
-#pragma warning(disable:4996)
-#include <stdlib.h>
-/*************************************************************************************/
-
-
 void Option::progress()
 {
 	int MouseX = MouseManager::getX();
@@ -38,28 +32,6 @@ void Option::render()
 	TransparentBlt(memDC, 0, 0, 1000, 822,option_background_bitmapDC, 0, 50, 1000, 772, RGB(255, 0, 255)); // 가로 822 , 세로 1000 의 배경화면 출력
 	buttonRender(MouseManager::getX(), MouseManager::getY());
 
-	/*************************화면에 수치표시용 (완성후삭제)*********************************/
-	char buf[256];
-	strcpy(buf, "X : ");
-	int len = 4;
-	len += sprintf(buf + len, "%d ", MouseManager::getX());
-	puts(buf);
-	TextOut(memDC, 0, 0, TEXT(buf), strlen(buf));
-
-	char buf_2[256];
-	strcpy(buf_2, "Y : ");
-	int len_2 = 4;
-	len_2 += sprintf(buf_2 + len_2, "%d ", MouseManager::getY());
-	puts(buf_2);
-	TextOut(memDC, 0, 20, TEXT(buf_2), strlen(buf_2));
-
-	char buf_3[256];
-	strcpy(buf_3, "difficulty : ");
-	int len_3 = 13;
-	len_3 += sprintf(buf_3 + len_3, "%d ", computer->difficulty);
-	puts(buf_3);
-	TextOut(memDC, 0, 40, TEXT(buf_3), strlen(buf_3));
-	/***************************************************************************************/
 }
 
 Option::Option(Computer* computer)//생성자
