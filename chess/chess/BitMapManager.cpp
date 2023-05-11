@@ -21,6 +21,7 @@ HDC	BitMapManager::Difficultly_bitmapDC = nullptr;
 HDC	BitMapManager::Option_background_bitmapDC = nullptr;
 HDC	BitMapManager::GameStart_background_bitmapDC = nullptr;
 HDC	BitMapManager::Set_difficultly_logo_bitmapDC = nullptr;
+HDC	BitMapManager::Change_pawn_window_bitmapDC = nullptr;
 
 void BitMapManager::initialize()
 {
@@ -120,6 +121,11 @@ void BitMapManager::initialize()
 	Set_difficultly_logo_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
 	HBITMAP Set_difficultly_logo_bitmapDC_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(125));
 	HBITMAP Set_difficultly_logo_bitmapDC_oldBitMap = (HBITMAP)SelectObject(Set_difficultly_logo_bitmapDC, Set_difficultly_logo_bitmapDC_myBitMap);
+
+	//병정 벽 끝 도달시 바꾸는 배경
+	Change_pawn_window_bitmapDC = CreateCompatibleDC(OverallVariables::getMemDC());
+	HBITMAP Change_pawn_window_bitmapDC_myBitMap = LoadBitmap(OverallVariables::getHInst(), MAKEINTRESOURCE(126));
+	HBITMAP Change_pawn_window_bitmapDC_oldBitMap = (HBITMAP)SelectObject(Change_pawn_window_bitmapDC, Change_pawn_window_bitmapDC_myBitMap);
 }
 
 HDC BitMapManager::getChessHorse_bitmapDC()
@@ -215,5 +221,10 @@ HDC BitMapManager::getGameStart_background_bitmapDC()
 HDC BitMapManager::getSet_difficultly_logo_bitmapDC()
 {
 	return Set_difficultly_logo_bitmapDC;
+}
+
+HDC BitMapManager::getChange_pawn_window_bitmapDC()
+{
+	return Change_pawn_window_bitmapDC;
 }
 

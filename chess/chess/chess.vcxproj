@@ -169,6 +169,7 @@
     <Image Include="..\images\109_체스판.bmp" />
     <Image Include="..\images\110_체스표시싸인.bmp" />
     <Image Include="..\images\111_쿨타임.bmp" />
+    <Image Include="..\images\change_pawn_window.bmp" />
     <Image Include="..\images\logo\112_checkMate_black.bmp" />
     <Image Include="..\images\logo\113_checkMate_white.bmp" />
     <Image Include="..\images\logo\114_clear.bmp" />

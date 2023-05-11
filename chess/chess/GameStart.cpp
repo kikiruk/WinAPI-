@@ -488,8 +488,10 @@ void GameStart::renderCheckMate(bool isWhite)
 
 void GameStart::renderChangeHorse(int MouseX,int MouseY)
 {
-	Rectangle(memDC, 282, 223, 701, 473);
-		
+	//병정 말을 바꿀때 배경
+	TransparentBlt(memDC, 245, 215, 537, 273, BitMapManager::getChange_pawn_window_bitmapDC(),
+		0, 0, 212, 239, RGB(255, 0, 255));//가로212 세로239 파일
+
 	if (MouseX > 307 && 407 > MouseX
 		&& MouseY > 358 && 458 > MouseY)
 	{

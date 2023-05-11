@@ -44,6 +44,7 @@ private:
 	static HDC Option_background_bitmapDC; // 옵션 배경화면 
 	static HDC GameStart_background_bitmapDC; // 빨간색 카페트 배경
 	static HDC Set_difficultly_logo_bitmapDC; // 난이도 설정 버튼 위에 글자
+	static HDC Change_pawn_window_bitmapDC; // 난이도 설정 버튼 위에 글자
 
 public:
 	static void initialize();
@@ -68,5 +69,6 @@ public:
 	static HDC getOption_background_bitmapDC();
 	static HDC getGameStart_background_bitmapDC();
 	static HDC getSet_difficultly_logo_bitmapDC();
+	static HDC getChange_pawn_window_bitmapDC();
 };
 
