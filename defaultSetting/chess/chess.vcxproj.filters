@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Managers">
+      <UniqueIdentifier>{a7809537-9dd3-49c7-bd4c-583089dd3fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\OverallVariables">
+      <UniqueIdentifier>{8261f42e-8fee-4769-b868-566b80a8e9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\MouseManager">
+      <UniqueIdentifier>{4289ebd2-779e-4eb1-bef8-10690fcc2a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MainGame">
+      <UniqueIdentifier>{ee773a1f-8a3d-481e-bb8c-b42133b7938c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States">
+      <UniqueIdentifier>{1bbb6cd8-828b-4ce6-840c-9c2064016ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\States\Main">
+      <UniqueIdentifier>{4dd7215f-849f-49e2-8020-6350ba5a68df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\StateManager">
+      <UniqueIdentifier>{ec32752c-2e0d-4a94-859f-15581ee19f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Managers\BitMapManager">
+      <UniqueIdentifier>{651bd2ef-b41e-4bcd-af73-6f6c0ce24040}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OverallVariables.cpp">
+      <Filter>소스 파일\Managers\OverallVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseManager.cpp">
+      <Filter>소스 파일\Managers\MouseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>소스 파일\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>소스 파일\States\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="StateManager.cpp">
+      <Filter>소스 파일\Managers\StateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="BitMapManager.cpp">
+      <Filter>소스 파일\Managers\BitMapManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OverallVariables.h">
+      <Filter>소스 파일\Managers\OverallVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseManager.h">
+      <Filter>소스 파일\Managers\MouseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>소스 파일\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>소스 파일\States</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>소스 파일\Managers\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>소스 파일\States\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="BitMapManager.h">
+      <Filter>소스 파일\Managers\BitMapManager</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\images\logo\117_StartLogo - 복사본.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\103_backGround.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\104_Buttons.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\105_difficultly.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\106_MainButtons.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\107_죽인말.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\108_체스말.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\109_체스판.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\110_체스표시싸인.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\111_쿨타임.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\112_checkMate_black.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\113_checkMate_white.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\114_clear.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\115_gameStart.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\116_loose.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\117_StartLogo.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\118_you.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\119_설정배경화면.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\120_GameStartBackground.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\logo\121_setDifficult.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\images\change_pawn_window.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="chess.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
